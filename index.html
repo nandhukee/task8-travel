@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travelista Tours - Login</title>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        display: flex;
+        width: 100%;
+        height: 100%;
+      }
+      .left {
+        background-image: url("https://tse1.mm.bing.net/th?id=OIP.nz6D-hX-hfeTLtT4z-fOeQHaEK&pid=Api&P=0&h=180"); /* Replace with actual image URL or path */
+        background-size: cover;
+        background-position: center;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        /* align-items:; */
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+      .left h1 {
+        font-size: 3em;
+        margin-bottom: 0.5em;
+      }
+      .left p {
+        font-size: 1.2em;
+      }
+      .right {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background-color: #f7f7f7;
+      }
+      .login-box {
+        width: 80%;
+        max-width: 400px;
+        background: white;
+        padding: 40px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        border-radius: 10px;
+      }
+      .login-box h2 {
+        margin-bottom: 20px;
+        font-size: 2em;
+        color: #333;
+      }
+      .login-box input[type="email"],
+      .login-box input[type="password"] {
+        width: calc(100% - 40px);
+        padding: 10px;
+        margin: 10px 0;
+        font-size: 1em;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .login-box button {
+        width: 100%;
+        padding: 10px;
+        background: #007bff;
+        border: none;
+        color: white;
+        font-size: 1em;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 20px 0;
+      }
+      .login-box button:hover {
+        background: #0056b3;
+      }
+      .social-login {
+        display: flex;
+        justify-content: space-between;
+      }
+      .social-login a {
+        display: block;
+        width: 30%;
+        padding: 10px;
+        color: white;
+        background: #555;
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none;
+      }
+      .social-login a:hover {
+        background: #333;
+      }
+      .forgot-password,
+      .register {
+        display: block;
+        margin-top: 10px;
+        color: #007bff;
+        text-decoration: none;
+      }
+      .forgot-password:hover,
+      .register:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <div>
+          <h1>Travelista Tours</h1>
+          <p>
+            Travel is the only purchase that enriches you in ways beyond
+            material wealth
+          </p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="login-box">
+          <h2>Welcome</h2>
+          <form>
+            <input type="email" placeholder="Email ID" required />
+            <input type="password" placeholder="Password" required />
+            <button type="submit">Login</button>
+          </form>
+          <a href="#" class="forgot-password">Forgot your password?</a>
+          <div class="social-login">
+            <a href="#">Google</a>
+            <a href="#">Facebook</a>
+            <a href="#">Apple</a>
+          </div>
+          <a href="#" class="register">Don't have an account? Register Now</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
